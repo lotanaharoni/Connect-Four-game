@@ -25,7 +25,7 @@ Enjoy!
 #### 3. Select the diffuculty level of the game. Then click the 'Next' button.
 #### 4. Select your color. Then click the 'Start' button.
 <p align="center">
-<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" />
+<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" width = 500px hight = 500px/>
 </p>
 
 ## Play agains a friend
