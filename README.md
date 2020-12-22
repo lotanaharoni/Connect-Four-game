@@ -6,6 +6,7 @@ This is an interactive Connect Four program that applies a graphical user interf
 All the project is written in Python.
 
 The GUI is done with Tkinter library.
+<br>
 
 The rules of this game are the same as a regular <a href="https://en.wikipedia.org/wiki/Connect_Four" > Connect Four</a>.<br>
 Follow the key features before you start to play.<br>
