@@ -18,12 +18,11 @@ Enjoy!
 <br>
 
 ## Configure the game settings
-#### 1. Click the 'Start' button.
-#### 2. At the Game Mode window, Select the number of players. 
-##### a. If there are two players, click the 'Start' button and enjoy!
-##### b. If you play against the computer, click the 'Next' button and move to step 3. 
-#### 3. Select the diffuculty level of the game. Then click the 'Next' button.
-#### 4. Select your color. Then click the 'Start' button.
+#### 1. Choose the game's mode you wish to play.
+##### a. Player VS Player
+##### b. Player VS Computer - player starts
+##### c. Player VS Computer - computer starts
+##### d. Cimputer VS Computer
 <p align="center">
 <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" width = 400px hight = 400px/>
 </p>
@@ -36,7 +35,7 @@ Enjoy!
 </p>
 
 ## Play against the computer
-### The game offers the option to play against a real AI based opponent in four different levels: noob, easy, moderate, and hard.<br>
+### The game offers the option to play against the computer.<br>
 ### Can you beat the computer?
 <p align="center">
 <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Computer_VS_Man.gif?raw=true" width = 400px hight = 400px/>
