@@ -23,6 +23,7 @@ Enjoy!
 ##### b. Player VS Computer - player starts
 ##### c. Player VS Computer - computer starts
 ##### d. Cimputer VS Computer
+#### 2. Remember, the yellow player starts!
 <p align="center">
 <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" width = 400px hight = 400px/>
 </p>
