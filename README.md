@@ -25,21 +25,21 @@ Enjoy!
 #### 3. Select the diffuculty level of the game. Then click the 'Next' button.
 #### 4. Select your color. Then click the 'Start' button.
 <p align="center">
-<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" width = 500px hight = 500px/>
+<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Menu.png?raw=true" width = 400px hight = 400px/>
 </p>
 
 ## Play agains a friend
 ### The game offers the option to play against a friend.
 #### 1. Pick the column to drop your disc. 
 <p align="center">
-<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_MAN_VS_MAN.gif?raw=true" />
+<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_MAN_VS_MAN.gif?raw=true" width = 400px hight = 400px/>
 </p>
 
 ## Play against the computer
 ### The game offers the option to play against a real AI based opponent in four different levels: noob, easy, moderate, and hard.<br>
 ### Can you beat the computer?
 <p align="center">
-<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Computer_VS_Man.gif?raw=true" />
+<img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_Computer_VS_Man.gif?raw=true" width = 400px hight = 400px/>
 </p>
 
 
@@ -47,5 +47,5 @@ Enjoy!
 ### You have the option to restart the game and to start from the beginning.
 #### 1. Click the 'Restart' button at the right panel.
 <p align="center">
-  <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_restart.gif?raw=true" />
+  <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_restart.gif?raw=true" width = 400px hight = 400px/>
 </p>
