@@ -47,5 +47,5 @@ Enjoy!
 ### You have the option to restart the game and to start from the beginning.
 #### 1. Click the 'Restart' button at the right panel.
 <p align="center">
-  123
+  <img src="https://github.com/lotanaharoni/Connect-Four-game/blob/main/images/Connect_Four_restart.gif?raw=true" />
 </p>
