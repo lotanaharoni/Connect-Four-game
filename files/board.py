@@ -13,7 +13,6 @@ SEQUENCE = 3
 COUNTER = 1
 REQUIRED_SEQUENCE = 4
 DIRECTIONS = {
-    # Directions to check sequence
     "D": "down",
     "R": "right",
     "L": "left",
@@ -26,27 +25,18 @@ DIRECTIONS = {
 
 class Board:
     """
-    This class represents the game's board, the places the player can insert
-    discs. Each board has a matrix with 6 rows and 7 columns,represents the
-    legal board.
-    In addition, the board has a list of "winning cells", in case there
-    are a sequence in the board, and a parameter of the last disc that
-    was inserted into it.
+    This class represents the game's board.
     """
 
     def __init__(self):
         """
-        This method build a new Board object. It has a matrix called "__board",
-        represents the cells in thr board, a list of the winning cells, and
-        a parameter that represents the last disc that inserted to the board.
-        :return: None
+        This method buildS a new Board object.
         """
         self.__board = []
         self.__wining_cells = []
         self.__last_disc = None
         temp = []
 
-        # initiate the board parameter with empty cells
         for row in range(BOARD_ROWS):
             for col in range(BOARD_COLUMNS):
                 temp.append(EMPTY)
@@ -66,8 +56,6 @@ class Board:
 
     def cell_content(self, coordinates):
         """
-        This method gets gets a tuple of coordinates ant returns the value
-        in the board in this coordinates.
         :param coordinates: tuple, with "x" and "y" value
         :return: string in case of empty cell, int in case of full cell
         """
@@ -75,11 +63,9 @@ class Board:
 
     def __all_cells(self):
         """
-        This method returns all the cells the exists in the game's board
         :return: list of all the coordinates in the board
         """
         all_coordinates = []
-        # For every cell in the board
         for row in range(len(self.__board)):
             for column in range(len(self.__board[row])):
                 all_coordinates.append((row, column))
@@ -93,9 +79,7 @@ class Board:
         """
         disc_coordinates = disc.get_coordinates()
         player = disc.get_player()
-        # inserts the disc into the board
         self.__board[disc_coordinates[ROW]][disc_coordinates[COLUMN]] = player
-        # updates the last disc the inserted into the board
         self.__last_disc = disc
 
     def is_full(self):
@@ -105,7 +89,6 @@ class Board:
         """
         for row in range(BOARD_ROWS):
             for col in range(BOARD_COLUMNS):
-                # If the cell is empty
                 if self.__board[row][col] == EMPTY:
                     return False
         return True
@@ -126,7 +109,7 @@ class Board:
 
     def update_winning_cells(self, directions):
         """
-        This method updates the "winning cells" parameter.
+        This method updates the "winning cells" parameters.
         :param directions: list, represents the illness's name
         :return: None
         """
@@ -137,25 +120,18 @@ class Board:
         # create the winning cells from the winning direction
         for direction in directions.items():
             for amount in range(1, direction[COUNTER] + 1):
-                # If the winner sequence was in the "right" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["R"]:
                     self.__wining_cells.append((disc_x, disc_y + 1 * amount))
-                # If the winner sequence was in the "down" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["D"]:
                     self.__wining_cells.append((disc_x + 1 * amount, disc_y))
-                # If the winner sequence was in the "left" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["L"]:
                     self.__wining_cells.append((disc_x, disc_y - 1 * amount))
-                # If the winner sequence was in the "diagonal up left" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["D_U_L"]:
                     self.__wining_cells.append((disc_x - 1 * amount, disc_y - 1 * amount))
-                # If the winner sequence was in the "diagonal up left" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["D_D_L"]:
                     self.__wining_cells.append((disc_x + 1 * amount, disc_y - 1 * amount))
-                # If the winner sequence was in the "diagonal up right" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["D_U_R"]:
                     self.__wining_cells.append((disc_x - 1 * amount, disc_y + 1 * amount))
-                # If the winner sequence was in the "diagonal down right" direction
                 if direction[DIRECTION_NAME] == DIRECTIONS["D_D_R"]:
                     self.__wining_cells.append((disc_x + 1 * amount, disc_y + 1 * amount))
 
